@@ -1,0 +1,10 @@
+SELECT
+    Case.CreatedDate,
+    Case.CaseNumber,
+    Case.CompanyName,
+    Case.Subject
+FROM
+    Case
+WHERE
+    Case.EngagementStatus != "CLOSED" 
+    AND Case.Status = "Urgent"
